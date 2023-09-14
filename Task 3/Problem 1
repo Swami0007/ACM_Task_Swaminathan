@@ -1,1 +1,9 @@
+Sum of Odd Elements 
 
+You are given a list. Return the sum of odd elements from the given list. The input and output portions will be handled automatically. You need to write a function with the recommended method signature.
+def sumofodd(arr):
+    sum = 0
+    for i in arr:
+        if i % 2 != 0:
+            sum += i
+    return sum
