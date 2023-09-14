@@ -1,0 +1,20 @@
+Project Euler #1: Multiples of 3 and 5
+
+import sys
+
+
+def sum_multiples_of_3_and_5(n):
+    total_sum = 0
+
+    for i in range(n):
+        if i % 3 == 0 or i % 5 == 0:
+            total_sum += i
+
+    return total_sum
+
+    
+t = int(input().strip())
+for a0 in range(t):
+    n = int(input().strip())
+    result = sum_multiples_of_3_and_5(n)
+    print(result)
